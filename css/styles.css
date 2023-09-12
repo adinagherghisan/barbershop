@@ -1,0 +1,52 @@
+:root {
+    --link-color: #fff;
+    --heading-font-family: "Raleway", sans-serif;
+    --text-font-family: "Open Sans", sans-serif;
+    --link-hover-color:#FF6C00;
+}
+
+.global-header {
+    background-color: #333333;
+}
+
+.global-header .main-navigation a:link,
+.global-header .main-navigation a:visited {
+    color: var(--link-color);text-decoration: none;
+font-family: var(--text-font-family);}
+
+.global-header .main-navigation a:hover {
+    color: var(--link-hover-color);
+}
+
+.global-header .main-navigation a:active {
+    color: #ff0000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+}
+.phone-number{color:var(--link-color);
+    font-family:var(--text-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    }
+    .phone-number:hover{color: var(--link-hover-color);}
+    .button{color: var(--link-color);
+        font-family: var(--text-font-family);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    padding: 12px 25px;}
+    .button:hover{background-color: #fff;color: #FF6C00;border:1px solid #fff;}

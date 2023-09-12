@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
     <!--Header-section-->
-    <header>
+    <header class="global-header">
     <a href="./index.html">
         <img src="./images/Logo.svg" alt="Logo BarberShop" />
     </a>
-    <nav><ul>
+    <nav class="main-navigation"><ul>
         <li> <a href="./about.html">About</a> </li>
         <li> <a href="#"> Services and Prices</a></li>
         <li> <a href="#">Barbers</a></li>
         <li> <a href="#">Contacts</a></li>
     </ul></nav>
             
-            <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-        <a href="https://goit.global/ro/contacts/" target="_blank">book a Services</a>
+            <a href="tel:+38 044 111 11 11" class="phone-number">+38 044 111 11 11</a>
+        <button type="button" class="button">Book a Service</button>
 
 <section>    
     <a href="https://www.youtube.com">Youtube</a>
@@ -49,7 +54,63 @@ you will never be the same again. We are a team that is always on the same wavel
 always ready to improve everyone who comes to us!</p>
     <button>Book a Services</button>
       </section>
-        
+      <!--Services and Prices Section-->
+        <section>
+            <img src="./images/orizontal-dash.png" alt="Separator">
+            <img src="./images/orizontal-dash.png" alt="Separator">
+            <h2>Services and Prices</h2>
+            <ul>
+                <li><span>Men's Haircut</span><span>from 300 UAH</span></li>
+                <li><span>Beard Trim</span><span>from 200 UAH</span></li>
+                <li><span>Mustache Trim</span><span>from 200 UAH</span></li>
+                <li><span>Straight Razor Shave</span><span>from 200 UAH</span></li>
+            </ul>
+            <ul>
+                <li><span>Trainee Haircut</span><span>from 50 UAH</span></li>
+                <li><span>Buzz Cut</span><span>from 200 UAH</span></li>
+                <li><span>Kids Haircut (&lt12 y.o.)</span><span>from 300 UAH</span></li>
+                <li><span>Gray Coverage</span><span>from 200 UAH</span></li>
+            </ul>
+            <button>Book a Services</button>
+        </section>
+        <!--Old school Section-->
+        <section>
+            <ul>
+                <li><span>600</span><sup>+</sup><span>Satisfied Customers per Day</span></li>
+                <li><span>50</span><sup>+</sup><span>Excellent Service Awards</span></li>
+                <li><span>20</span><sup>+</sup><span>The Best Barbers of Kyiv</span></li>
+                <li><span>100</span><sup>+</sup><span>Gifts for Regular Customers</span></li>
+            </ul>
+            <article>
+                <img src="./images/orizontal-dash.png" alt="Separator">
+                <h3>Old school</h3>
+                <h2>Why do they come to us?</h2>
+                <p>Only good things are said about us. But it is better  to see and feel 1 time than to read 10 times.</p>
+            </article>
+        </section>
+        <!--for true connoisseurs of the atmospheren Section-->
+        <section>
+            <img src="./images/orizontal-dash.png" alt="Separator">
+            <h3>for true connoisseurs of the atmosphere</h3>
+            <h2>Our Barbers</h2>
+            <img src="images/John Smith.png" alt="John Smith">
+            <br>
+             <span>John Smith</span>
+             <br>
+            <span>Extreme Barber</span>
+            <br>
+            <img src="images/Michele Doe.png" alt="Michele Doe">
+            <br>
+            <span>Michele Doe</span>
+            <br>
+            <span>Extreme Barber</span>
+            <br>
+           <img src="images/Alan Black.png" alt="Alan Black">
+           <br>
+           <span>Alan Black</span>
+           <br>
+           <span>Extreme Barber</span>
+        </section>
     </main>
 </body>
 </html>
