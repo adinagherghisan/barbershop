@@ -4,16 +4,29 @@
     --text-font-family: "Open Sans", sans-serif;
     --link-hover-color:#FF6C00;
 }
+body{margin: 0 auto;}
 
 .global-header {
-    background-color: #333333;
-}
+    background-color: #333333; display: flex;
+    flex-direction: row;
 
+}
+.main-navigation ul{list-style-type: none;display: flex;
+width: 405px;
+justify-content:space-between;}
 .global-header .main-navigation a:link,
 .global-header .main-navigation a:visited {
     color: var(--link-color);text-decoration: none;
 font-family: var(--text-font-family);}
+.nav-container{display: flex;
+     align-items: center;
+    width: 80%;
+    justify-content: space-between;}
 
+.contact-container{width: 30%;
+display: flex;
+align-items: center;
+justify-content: space-between;}
 .global-header .main-navigation a:hover {
     color: var(--link-hover-color);
 }
