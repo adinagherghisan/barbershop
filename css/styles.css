@@ -138,3 +138,23 @@ h6 {
     flex-basis: auto;}
     .prices-list li .prices-dash{margin-left:6px;
      margin-right: 6px;}
+     .modal{position: fixed;
+        width: 100vw;
+         height: 100vh;
+        top: 0;
+        left: 0;
+      display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #fff;}
+    .modal-content{background-color: #FFF;
+       padding: 20px;
+       width: 80%;}
+      .is-hidden{visibility: hidden;}
+      .close-btn{background-color: #ff0000;
+        border: 1px solid #ff0000;
+        color:#fff;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top:0}
