@@ -4,6 +4,7 @@
     --text-font-family: "Open Sans", sans-serif;
     --link-hover-color:#FF6C00;
     --heading-alternative-color:#303030;
+    --transition: 250ms cubic-bezier(0.4,0,0.2,1);
 }
 body{margin: 0 auto;}
 .container {max-width: 1200px;
@@ -68,7 +69,8 @@ h6 {
     background-color: transparent;
     border: 1px solid #FF6C00;
     border-radius: 25px;
-    padding: 12px 25px;}
+    padding: 12px 25px;
+     transition: background-color var(--transition), color var(--transition) , border var(--transition);}
     .section-dark button{color: var(--link-color);}
     .section-light button{color:#303030}
     .button:hover{background-color: #fff;color: #FF6C00;border:1px solid #fff;}
@@ -125,7 +127,8 @@ h6 {
         background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
            margin: 0 auto;}
     .prices-list:hover{background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
-      cursor: pointer;}
+      cursor: pointer;
+       transition:  background-image  var(--transition);}
     .prices-list li{display: flex;
         justify-content: space-between;
          align-items: baseline;
