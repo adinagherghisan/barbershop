@@ -29,14 +29,11 @@ h6 {
 .global-header aside{
    display: none;
 }
+
 .logo-mobile{position:absolute;
 left: 40px;
 top: 31px;}
-
-.global-header aside .social-media{
-    display: flex;
-   
-}
+ 
 .header-section{display: flex;
 flex-direction: column;
 background-image: url(../images/header-background.png);
@@ -248,25 +245,30 @@ height: 40px;
         background-color: #fff;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content:center;
         flex-direction: column;
+
     }
+    
+
 
     .global-header aside .social-media {
         display: flex;
         flex-direction: row-reverse;
         gap: 40px;
         transform: rotate(-90deg);
+        align-items: center;
+        
     }
-
+     .global-header aside .social-media img{transform: rotate(-90deg);margin-right: 40px;}
     .global-header .logo-mobile {
         display: none;
     }
 
     .global-header .logo {
         position: absolute;
-        left: 55px;
-        top: 32px;
+        left: 0;
+        top: 0;
     }
 
     .global-header .logo svg {
@@ -312,6 +314,7 @@ height: 40px;
        justify-content: space-between;
      
    }
+   .logo-mobile{display: none;}
    .prices {
        display: flex;
        margin: 50px 0;
