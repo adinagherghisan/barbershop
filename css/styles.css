@@ -153,6 +153,7 @@ justify-content: space-between;}
         letter-spacing: 0.1em;
         margin-bottom: 20px;
         }
+
     .section-description h1{color: #303030;
     
         font-family:var(--heading-font-family);
@@ -177,69 +178,190 @@ justify-content: space-between;}
         letter-spacing: 2.1px;
          margin: 0 auto;}
    
-    .prices{display:none}
-    .prices-mobile{margin: 50px 0;}
-    .prices-list{color: rgba(157, 164, 189, 1)
-        ;font-family: var(--text-font-family);
+		.prices{display:none}
+		.prices-mobile{margin: 50px 0;}
+		.prices-list{color: rgba(157, 164, 189, 1)
+			;font-family: var(--text-font-family);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0.36px;
+			list-style-type: none;
+			flex-grow: 1;
+			padding: 30px 40px;
+			background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+			margin: 0 auto;}
+		.prices-list:hover{background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
+		cursor: pointer;
+		transition:  background-image  var(--transition);}
+		.prices-list li{display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+		.prices-list li:not(:last-child){margin-bottom: 20px;}
+		.prices-dash{height: 1px;
+		background:rgba(157, 164, 189, 0.12);
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: auto;}
+		.prices-list li .prices-dash{margin-left:6px;
+		margin-right: 6px;}
+			.old-school-section ul{display: flex;
+                padding: 0;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 30px;
+			list-style: none;}
+	.old-school-section ul li{width: 193px;
+			height: 133px;
+			background-color: #F7F7F7;
+			display: flex;flex-direction: column;
+	    	justify-content: center;
+	       align-items: center;
+	       gap:6px}
+    .old-school-article{display: flex;
+    flex-direction: column;
+gap: 44px; justify-content: center;align-items: center;}
+
+	.old-school-section .left-side-container,
+	.old-school-section .right-side-container{
+		display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+    .old-school-article{display: flex;flex-direction: column;}
+    .old-school-section .right-side-container{margin-top: 35px;}
+    .old-school-article .section-description h2{color: #303030;
+        font-family: var(--heading-font-family);
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.1px;}
+    .old-school-article p{color: #555;
+        font-family:var(--text-font-family);
         font-size: 18px;
+        font-style: normal;
         font-weight: 400;
         line-height: 30px;
+        /* 166.667% */
         letter-spacing: 0.36px;
-         list-style-type: none;
-        flex-grow: 1;
-         padding: 30px 40px;
-        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
-           margin: 0 auto;}
-    .prices-list:hover{background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
-      cursor: pointer;
-       transition:  background-image  var(--transition);}
-    .prices-list li{display: flex;
-        justify-content: space-between;
-         align-items: baseline;
+   }
+    
+   
+	.rating-value {display: flex;
+	 justify-content: center;
+	align-items: center;}
+	.rating-value sup{color: #FF6C00;
+	font-family:var(--text-font-family);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;}
+	.rating-description{width: 122px;
+	color: #303030;
+	    text-align: center;
+		font-family: var(--text-font-family);
+		font-size: 11px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;}
+	.rating-number{color: #303030;
+	    font-family:var(--text-font-family);
+		font-size: 42px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 2.1px;}
+.our-barbers-section{background: #F7F7F7;}
+    .our-barbers-section .barbers-wraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .prices-list li:not(:last-child){margin-bottom: 20px;}
-    .prices-dash{height: 1px;
-    background:rgba(157, 164, 189, 0.12);
-     flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: auto;}
-    .prices-list li .prices-dash{margin-left:6px;
-     margin-right: 6px;}
-     .modal{position: fixed;
-        width: 100vw;
-         height: 100vh;
-        top: 0;
-        left: 0;
-      display: flex;
-       justify-content: center;
-       align-items: center;
-       background-color:rgba(0,0,0,0.2);}
-    .modal-content{background-color: #FFF;
-       padding: 20px;
-       width: 80%;}
-      .is-hidden{visibility:hidden;}
-      .close-btn{background-color: #ff0000;
-        border: 1px solid #ff0000;
-        color:#fff;
-        cursor: pointer;
-        position: relative;
-        right: 0;
-        top:0}
-.js-menu-container{display: none;}
-.js-menu-container.is-open{display: flex;
-flex-direction: column;
-position: absolute;
-top: 0;
-right: 0;
-background-color: #FFF;
-height: 100%;
-width: 337px;
-padding: 40px 40px;
-z-index: 1;}
-.js-menu-container .js-close-menu {
-    border: none;
-    background: none;
-    cursor: pointer;
+         .our-barbers-section .barbers-wraper .barber-container {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             gap: 30px;
+             margin-bottom: 64px;
+         }
+    
+    .barber-description{display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;}
+    .barber-description span:first-child{color: #303030;
+     text-align: center;
+        font-family: var(--text-font-family);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;}
+                 .barber-description span:last-child{color: #FF6C00;
+                  text-align: center;
+                    font-family:var(--text-font-family);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.28px;}
+    .our-barbers-section{display: flex;
+    flex-direction: column;
+gap: 44px;}
+    .our-barbers-section .barber-social-media{display: flex;
+    flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px}
+.our-barbers-section .barber-social-media .svg-container svg{width: 20px;
+    height: 20px;}
+    .our-barbers-section .barber-social-media .svg-container{width: 44px;
+        height: 44px;border-radius: 50%;background-color: #FFF;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.svg-container:hover .svg-item{fill:#FF6C00;cursor: pointer;}
+		.modal{position: fixed;
+			width: 100vw;
+			height: 100vh;
+			top: 0;
+			left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color:rgba(0,0,0,0.2);}
+		.modal-content{background-color: #FFF;
+		padding: 20px;
+		width: 80%;}
+		.is-hidden{visibility:hidden;}
+		.close-btn{background-color: #ff0000;
+			border: 1px solid #ff0000;
+			color:#fff;
+			cursor: pointer;
+			position: relative;
+			right: 0;
+			top:0}
+	.js-menu-container{display: none;}
+	.js-menu-container.is-open{display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #FFF;
+	height: 100%;
+	width: 337px;
+	padding: 40px 40px;
+	z-index: 1;}
+	.js-menu-container .js-close-menu {
+		border: none;
+		background: none;
+		cursor: pointer;
     width: 40px;
     height: 40px;
     align-self: flex-end;
@@ -343,7 +465,17 @@ margin-bottom: 24px;
         .about-section .section-images{display: flex;
         flex-direction: column;}
        .section-with-two-columns{align-items: center;}
-   }
+       .old-school-article .section-description{width: 50%;display: flex;align-self: flex-start
+    ;flex-direction: column;}
+    
+       .old-school-article ul{display: flex;align-self: flex-end;}
+   
+   .our-barbers-section .barbers-wraper {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }}
     
    /*Desktop*/
    @media screen and (min-width: 1158px) {.menu-button{display: none;}
@@ -353,12 +485,12 @@ margin-bottom: 24px;
    .nav-container {
        display: flex;
        flex-direction: row;
-       align-items: center;
+       align-items: baseline;
        justify-content: space-between;
      
    }
    .header-text{padding: 184px 100px;}
-   .contact-container{flex-direction: row;display: flex;}
+   .contact-container{flex-direction: row;display: flex;justify-content: center;align-items: baseline;}
    .logo-mobile{display: none;}
    .prices {
        display: flex;
@@ -372,13 +504,24 @@ margin-bottom: 24px;
                 .section-images {
                     display: flex
                 }
-        
-               
-                
-                
- .prices-mobile{display: none;}
-}
-  
+   .prices-mobile{display: none;}
+   .old-school-section .old-school-article{display: flex;
+    flex-direction: row-reverse;
+} 
+   .old-school-article ul{display: flex;flex-direction: row;}
+   .old-school-article {display: flex;
+    flex-direction: row-reverse;align-items: baseline;
+        justify-content: center;gap: 130px;}
+    .old-school-section .section-description{width: 50%;}
+   
+
+  .our-barbers-section .barbers-wraper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  }}
    
     
    

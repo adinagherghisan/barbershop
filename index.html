@@ -6,7 +6,7 @@
     <title>BarberShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
@@ -219,54 +219,153 @@
             
         </section>
         <!--Old school Section-->
-        <section>
-            <ul>
-                <li><span>600</span><sup>+</sup><span>Satisfied Customers per Day</span></li>
-                <li><span>50</span><sup>+</sup><span>Excellent Service Awards</span></li>
-                <li><span>20</span><sup>+</sup><span>The Best Barbers of Kyiv</span></li>
-                <li><span>100</span><sup>+</sup><span>Gifts for Regular Customers</span></li>
-            </ul>
-            <article>
-                <img src="./images/orizontal-dash.png" alt="Separator">
-                <h3>Old school</h3>
-                <h2>Why do they come to us?</h2>
-                <p>Only good things are said about us. But it is better  to see and feel 1 time than to read 10 times.</p>
-            </article>
+        <section id="old=school" class="section section-light old-school-section">
+            
+            <div class="old-school-article ">
+               <div class="section-description">
+                    <div class="heading-with-dash"><img src="./images/orizontal-dash.png" alt="Separator">
+                        <h3 class="section-sub-heading">Old school</h3>
+                    </div>
+                    <h2 class="section-heading">Why do they come to us?</h2>
+                    <p>Only good things are said about us. But it is better to see and feel 1 time than to read 10 times.</p>
+                </div>
+                
+                <ul>
+                    <div class="left-side-container">
+                        <li>
+                            <div class="rating-value"><span class="rating-number">600</span><sup>+</sup></div>
+                            <div class="rating-description"><span>Satisfied Customers per Day</span></div>
+                        </li>
+                        <li>
+                            <div class="rating-value"><span class="rating-number">20</span><sup>+</sup></div>
+                            <div class="rating-description"><span>Excellent Service Awards</span></div>
+                        </li>
+                    </div>
+                    <div class="right-side-container">
+                        <li>
+                            <div class="rating-value"><span class="rating-number">50</span><sup>+</sup></div>
+                            <div class="rating-description"><span>The Best Barbers of Kyiv</span></div>
+                        </li>
+                        <li>
+                            <div class="rating-value"><span class="rating-number">100</span><sup>+</sup></div>
+                            <div class="rating-description"><span>Gifts for Regular Customers</span></div>
+                        </li>
+                    </div>
+                
+                </ul></div>
+               
+           
         </section>
-        <!--for true connoisseurs of the atmospheren Section-->
-        <section>
-            <img src="./images/orizontal-dash.png" alt="Separator">
-            <h3>for true connoisseurs of the atmosphere</h3>
-            <h2>Our Barbers</h2>
+        <!--Our Barbers Section-->
+        <section id="our-barbers" class="section section-light our-barbers-section">
+            <div class="section-description">
+                <div class="heading-with-dash"><img src="./images/orizontal-dash.png" alt="Separator">
+                    <h3 class="section-sub-heading">for true connoisseurs of the atmosphere</h3>
+                </div>
+                <h2 class="section-heading">Our Barbers</h2>
+               
+            </div>
+            <div class="barbers-wraper"><div class="barber-container">
+                <!--Desktop-->
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/ John Smith-d.png 1x,
+                                 ./images/ John Smith-d-2x.png 2x " />
+                    <!--Tablet-->
+                    <source media="(min-width:768px)" srcset="./images/ John Smith-t.png 1x,
+                                 ./images/ John Smith-t-2x.png 2x " />
+                    <!--Mobile-->
+                    <source srcset="./images/ John Smith-m.png 1x,
+                                 ./images/ John Smith-m-2x.png 2x " />
+                    <img src="images/ John Smith-d.png" alt="John Smith" />
+                </picture>
+                <div class="barber-description"><span>John Smith</span>
+                  <span>Extreme Barber</span></div>
+                <div class="barber-social-media">
+                    <div class="svg-container"><svg class="svg-item">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg></div>
+                
+                    <div class="svg-container"><svg class="svg-item">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        </svg></div>
+                    <div class="svg-container"><svg class="svg-item">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg></div>
+                    <div class="svg-container"><svg class="svg-item">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg></div>
+                </div>
+                 </div>
+            <div class="barber-container">
+                <!--Desktop-->
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/ Michele Doe.png 1x,
+                                         ./images/ Michele-Doe-d-2x.png 2x " />
+                    <!--Tablet-->
+                    <source media="(min-width:768px)" srcset="./images/ Michele-Doe-t.png 1x,
+                                         ./images/ Michele-Doe-t-2x.png 2x " />
+                    <!--Mobile-->
+                    <source srcset="./images/ Michele-Doe-m.png 1x,
+                                         ./images/ Michele-Doe-m-2x.png 2x " />
+                    <img src="images/Michele Doe.png" alt="Michele Doe" />
+                </picture>
+              <div class="barber-description"><span>Michele Doe</span>
+            
+            <span>Extreme Barber</span></div>
+            <div class="barber-social-media">
+                <div class="svg-container"><svg class="svg-item">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg></div>
+                
+                <div class="svg-container"><svg class="svg-item">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg></div>
+            <div class="svg-container"><svg class="svg-item">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg></div>
+                <div class="svg-container"><svg class="svg-item">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg></div>
+            </div>
+                
+              
+            </div>
+            <div class="barber-container">
+                <!--Desktop-->
+                <picture>
+                    <source media="(min-width:1158px)" srcset="./images/ Alan Black.png 1x,
+                                                 ./images/ Alan-Black-d-2x.png 2x " />
+                    <!--Tablet-->
+                    <source media="(min-width:768px)" srcset="./images/ Alan-Black-t.png 1x,
+                                                 ./images/ Alan-Black-t-2x.png 2x " />
+                    <!--Mobile-->
+                    <source srcset="./images/ Alan-Black-m.png 1x,
+                                                 ./images/ Alan-Black-M-2x.png 2x " />
+                    <img src="images/Alan Black.png" alt="Alan Black" />
+                </picture>
+               <div class="barber-description"><span>Michele Doe</span>
+            
+            <span>Extreme Barber</span></div>
+            <div class="barber-social-media">
+                <div class="svg-container"><svg class="svg-item">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg></div>
+            
+                <div class="svg-container"><svg class="svg-item">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg></div>
+                <div class="svg-container"><svg class="svg-item">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg></div>
+                <div class="svg-container"><svg class="svg-item">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg></div>
+            </div>
+                
+            </div></div>
+         
           
-           <!--Desktop-->
-           <picture>
-            <source media="(min-width:1158px)" srcset="./images/ John Smith-d.png 1x,
-             ./images/ John Smith-d-2x.png 2x " />
-           <!--Tablet-->
-            <source media="(min-width:768px)" srcset="./images/ John Smith-t.png 1x,
-             ./images/ John Smith-t-2x.png 2x " />
-            <!--Mobile-->
-            <source  srcset="./images/ John Smith-m.png 1x,
-             ./images/ John Smith-m-2x.png 2x " />
-           <img src="images/ John Smith-d.png" alt="John Smith"/>
-           </picture> 
-           <br>
-             <span>John Smith</span>
-             <br>
-            <span>Extreme Barber</span>
-            <br>
-            <img src="images/Michele Doe.png" alt="Michele Doe">
-            <br>
-            <span>Michele Doe</span>
-            <br>
-            <span>Extreme Barber</span>
-            <br>
-           <img src="images/Alan Black.png" alt="Alan Black">
-           <br>
-           <span>Alan Black</span>
-           <br>
-           <span>Extreme Barber</span>
+          
         </section>
     </main>
     <!--Book-Service-Modal-->
